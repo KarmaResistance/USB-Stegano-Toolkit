@@ -24,7 +24,7 @@ A lightweight Python-based tool to hide and extract secret files inside images. 
 3. 
 
 
-
+![image_alt](https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/f5fc1b81b39b280bdb14595b6ac88899edefaf92/Screenshots/Screenshot%20(73).png)
 
 
 
