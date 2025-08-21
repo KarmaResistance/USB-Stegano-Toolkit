@@ -1,2 +1,5 @@
 # USB-Stegano-Toolkit
-One way to hide your password text files or any other secret files from individuals or entities.
+
+Steganography Toolkit on USB  
+
+A lightweight Python-based tool to hide and extract secret files inside images. Designed to be run directly from a USB drive for portability.  
