@@ -1,10 +1,10 @@
-## USB-Stegano-Toolkit
+# USB-Stegano-Toolkit
 
 Steganography Toolkit on USB.  
 
 A lightweight Python-based tool to hide and extract secret files inside images. Designed to be run directly from a USB drive for portability.  
 
-# Features
+## Features
 - Hide text or small files inside PNG images.
 - Optional passphrase protection for extraction.  
 - Disguise hidden PNGs as '.jpg' for stealth.  
