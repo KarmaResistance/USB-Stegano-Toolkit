@@ -25,7 +25,7 @@ A lightweight Python-based tool to hide and extract secret files inside images. 
    
 3. Pick a file (this can be your password text file or any other secret files)
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/1.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/1.png" alt="screenshot" width="400"/>
 
 4. If you have Git installed on your windows, Here’s the command to download the source files into your Desktop:
 
@@ -36,7 +36,7 @@ git clone https://github.com/KarmaResistance/USB-Stegano-Toolkit.git
 
 You can manually download the source files too. Then, put your secret file and a picture in the toolkit folder. Make sure your picture is private one and not taken from internet as investigators or hackers can compare its hash with the "original" from the internet. Any difference may indicate tampering. Picture will be in JPG, so convert it to PNG by opening your picture in your Paint Application and save it as 'PNG'. PNG can retain the content of your secret file much better than JPG.
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/2.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/2.png" alt="screenshot" width="400"/>
 
 5. Now, open your terminal. Navigate to the folder where you downloaded the toolkit files. (Tip: Right-click inside the folder and select Open in Terminal.
  
@@ -48,13 +48,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```   
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/3.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/3.png" alt="screenshot" width="400"/>
 
 7. Insert your USB and keep it ready.
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/2.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/6842aea9d936de6f6bc9c585ffbfa5b684bfb52c/Screenshots/2.png" alt="screenshot" width="400"/>
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/5.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/5.png" alt="screenshot" width="400"/>
 
 8. Now, Insert this command in your terminal:
 
@@ -62,9 +62,9 @@ pip install -r requirements.txt
 python .\steg_tool.py embed -i .\Gathering.png -o E:\27967_673425.png -f .\test.txt
 ```
    
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/6.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/6.png" alt="screenshot" width="400"/>
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/7.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/7.png" alt="screenshot" width="400"/>
 
 Don’t use a passphrase that is too simple. The embedded file should be saved in your usb.
 
@@ -76,7 +76,7 @@ Rename-Item E:\27967_673425.png E:\IMG_6734.jpg
 
 This is done so that the picture looks like a normal camera JPEG while still holding your hidden data. Most apps use the image's magic bytes (file signature) to decide how to open it, not just the extension. So a PNG named '.jpg' usually still opens fine, and your stego bits remain intact. This makes the picture appear like a normal camera JPEG, making it less suspicious. You can also rename it to look like a typical camera filename (e.g., IMG_6734.jpg)
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/8.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/8.png" alt="screenshot" width="400"/>
 
 10. Now, if you want to extract the hidden file from the embedded picture that was saved in USB, here's the command :
 
@@ -84,11 +84,11 @@ This is done so that the picture looks like a normal camera JPEG while still hol
 python .\steg_tool.py extract -i E:\IMG_4563.jpg -o "$HOME\Desktop\recovered.txt"
 ```
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/9.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/9.png" alt="screenshot" width="400"/>
 
 You can set the location you want to obtain the recovered secret file. Enter the same passphrase you set while you were embedding the picture with secret file. You should be able to get your secret file back with no content erased.
 
-<img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/10.png" alt="screenshot" width="400"/>
+   <img src="https://github.com/KarmaResistance/USB-Stegano-Toolkit/blob/de46c593cec9b3e225b225b34df02f67a0528e40/Screenshots/10.png" alt="screenshot" width="400"/>
 
 
 ## Security Notes
