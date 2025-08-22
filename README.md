@@ -93,13 +93,13 @@ You can set the location you want to obtain the recovered secret file. Enter the
 
 ## Security Notes
 
-- Steganography is a form of **obfuscation**, not guaranteed protection. Skilled investigators, forensic analysts, or government agencies may still detect that an image has been modified.  
-- Detection does **not** equal access: if you use a strong passphrase, the extracted data will still be **encrypted gibberish** without your key.  
-- Always use a **strong, unique passphrase** (avoid simple ones like `1234`, `password`, or personal names).  
-- Avoid uploading stego-images to platforms that **recompress or resize images** (e.g., WhatsApp, Facebook, Instagram, Twitter) — this usually destroys the hidden data.  
+- Steganography is a form of **obfuscation**, not guaranteed protection. Skilled investigators, forensic analysts or government agencies may still detect that an image has been modified.  
+- Detection does **not** equal access. if you use a strong passphrase, the extracted data will still be **encrypted gibberish** without your key.  
+- Always use a **strong, unique passphrase** (avoid simple ones like `1234`, `password` or personal names).  
+- Avoid uploading stego-images to platforms that **recompress or resize images** (e.g., WhatsApp, Facebook, Instagram, Twitter). This usually destroys the hidden data.  
 - Works best with **PNG images**. JPEG files may corrupt or strip out hidden data.  
 - Keep your **payload small** (e.g., text files, notes, passwords). Very large hidden files may cause suspiciously large image sizes.  
-- For maximum safety, combine steganography with **encryption**: encrypt your file first, then embed it.  
+- For maximum safety, combine steganography with **encryption**. Encrypt your file first, then embed it.  
 - Renaming `.png` files to `.jpg` adds disguise, but remember the file is still technically a PNG. Some forensic tools may notice the mismatch.  
 - This project is intended for **educational purposes only**. Use responsibly.  
 
